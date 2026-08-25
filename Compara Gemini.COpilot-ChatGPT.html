@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuadro Comparativo: Gemini vs Copilot vs ChatGPT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gemini-gradient {
+      background: linear-gradient(135deg, #4285f4 0%, #9b51e0 50%, #d946ef 100%);
+    }
+    .copilot-gradient {
+      background: linear-gradient(135deg, #0078d4 0%, #00a4ef 50%, #00c853 100%);
+    }
+    .chatgpt-gradient {
+      background: linear-gradient(135deg, #10a37f 0%, #059669 50%, #0d9488 100%);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-12">
+
+  <!-- Header Section -->
+  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs font-medium mb-4">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      Matriz de Equivalencias e Integración 2026
+    </div>
+    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+      Gemini <span class="text-slate-500">vs</span> Copilot <span class="text-slate-500">vs</span> ChatGPT
+    </h1>
+    <p class="text-slate-400 text-base sm:text-lg max-w-3xl mx-auto">
+      Comparativa visual de funciones equivalentes entre los ecosistemas de Google, Microsoft y OpenAI.
+    </p>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+    <!-- Resumen de Enfoque Principal -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card Gemini -->
+      <div class="glass-card rounded-2xl p-6 relative overflow-hidden transition-all duration-300 hover:border-blue-500/50">
+        <div class="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-blue-500/10 blur-xl"></div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl gemini-gradient flex items-center justify-center font-bold text-white shadow-lg">G</div>
+          <div>
+            <h3 class="text-lg font-bold text-white">Google Gemini</h3>
+            <p class="text-xs text-blue-400">Ecosistema Google Workspace</p>
+          </div>
+        </div>
+        <p class="text-sm text-slate-300 mb-4">
+          Potenciado por el grafo de información de Google. Ideal para colaboración en la nube, investigación rápida y análisis multimodal.
+        </p>
+        <div class="text-xs text-slate-400 bg-slate-800/80 p-3 rounded-lg border border-slate-700/50">
+          <strong class="text-blue-300 block mb-1">Superpoder:</strong>
+          Acceso nativo a Drive, Gmail, Docs y YouTube con respuestas basadas en la web en tiempo real.
+        </div>
+      </div>
+
+      <!-- Card Copilot -->
+      <div class="glass-card rounded-2xl p-6 relative overflow-hidden transition-all duration-300 hover:border-cyan-500/50">
+        <div class="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-cyan-500/10 blur-xl"></div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl copilot-gradient flex items-center justify-center font-bold text-white shadow-lg">C</div>
+          <div>
+            <h3 class="text-lg font-bold text-white">Microsoft Copilot</h3>
+            <p class="text-xs text-cyan-400">Windows & Office 365</p>
+          </div>
+        </div>
+        <p class="text-sm text-slate-300 mb-4">
+          Diseñado para el entorno corporativo y productividad del sistema operativo. Trabajo integrado en Word, Excel, PowerPoint y Teams.
+        </p>
+        <div class="text-xs text-slate-400 bg-slate-800/80 p-3 rounded-lg border border-slate-700/50">
+          <strong class="text-cyan-300 block mb-1">Superpoder:</strong>
+          Automatización de tareas de escritorio, acciones del sistema operativo y procesamiento de datos corporativos en Excel.
+        </div>
+      </div>
+
+      <!-- Card ChatGPT -->
+      <div class="glass-card rounded-2xl p-6 relative overflow-hidden transition-all duration-300 hover:border-emerald-500/50">
+        <div class="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-emerald-500/10 blur-xl"></div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl chatgpt-gradient flex items-center justify-center font-bold text-white shadow-lg">AI</div>
+          <div>
+            <h3 class="text-lg font-bold text-white">ChatGPT</h3>
+            <p class="text-xs text-emerald-400">OpenAI Multiplataforma</p>
+          </div>
+        </div>
+        <p class="text-sm text-slate-300 mb-4">
+          El modelo de propósito general más versátil. Destaca en razonamiento avanzado, desarrollo de software y personalización extrema.
+        </p>
+        <div class="text-xs text-slate-400 bg-slate-800/80 p-3 rounded-lg border border-slate-700/50">
+          <strong class="text-emerald-300 block mb-1">Superpoder:</strong>
+          Ejecución directa de código (Python), razonamiento lógico abstracto e interacciones por voz ultra fluida.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tabla Comparativa Detallada -->
+    <div class="glass-card rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+      
+      <div class="p-6 border-b border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-xl font-bold text-white">Tabla de Equivalencias por Funcionalidad</h2>
+          <p class="text-xs text-slate-400">Identifica las herramientas análogas según lo que necesites realizar</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-slate-400">Filtrar por:</span>
+          <select id="categoryFilter" onchange="filterCategory()" class="bg-slate-800 text-slate-200 text-xs rounded-lg border border-slate-700 px-3 py-1.5 focus:outline-none focus:border-blue-500">
+            <option value="all">Todas las categorías</option>
+            <option value="aprendizaje">Aprendizaje Guiado (Tutoría)</option>
+            <option value="personalizacion">Inteligencia Personalizada (Memoria)</option>
+            <option value="imaginar">Imaginar y Creación Creativa</option>
+            <option value="cuadernos">Cuadernos y Notas (Notebooks)</option>
+            <option value="estudiantes">Estudiantes e Investigación</option>
+            <option value="imagenes">Generación de Imágenes</option>
+            <option value="biblioteca">Biblioteca / Personalización</option>
+            <option value="proyectos">Proyectos y Espacios de Trabajo</option>
+            <option value="experimentos">Experimentos y Labs (Beta)</option>
+            <option value="razonamiento">Razonamiento Profundo (Thinking)</option>
+            <option value="voz">Voz e Interacción</option>
+            <option value="editor">Edición / Canvas</option>
+            <option value="codigo">Código y Análisis de Datos</option>
+            <option value="archivos">Manejo de Archivos</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-900/90 text-slate-400 text-xs uppercase tracking-wider border-b border-slate-800">
+              <th class="p-4 pl-6 w-1/4">Área / Función</th>
+              <th class="p-4 w-1/4 text-blue-400">Gemini (Google)</th>
+              <th class="p-4 w-1/4 text-cyan-400">Copilot (Microsoft)</th>
+              <th class="p-4 pr-6 w-1/4 text-emerald-400">ChatGPT (OpenAI)</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody" class="divide-y divide-slate-800/60 text-sm">
+            
+            <!-- Aprendizaje Guiado -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="aprendizaje">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-emerald-500/10 text-emerald-400">📖</span>
+                  Aprendizaje Guiado (Tutoría)
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">LearnLM & Tutor Socrático</span>
+                <p class="text-xs text-slate-400">Modelos orientados a la pedagogía. Explican temas con preguntas guía, paso a paso, generando ejercicios interactivos sin dar soluciones de golpe.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Tutor & OneNote</span>
+                <p class="text-xs text-slate-400">Estructura guías de estudio interactivas, resuelve ecuaciones en OneNote mostrando el procedimiento y crea fichas conceptuales.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Modo Estudio & Quizzes</span>
+                <p class="text-xs text-slate-400">Enseña con método socrático, genera exámenes de prueba con retroalimentación inmediata y desglosa temas complejos según tu ritmo.</p>
+              </td>
+            </tr>
+
+            <!-- Inteligencia Personalizada -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="personalizacion">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-violet-500/10 text-violet-400">👤</span>
+                  Inteligencia Personalizada
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Memoria de Preferencias & Contexto</span>
+                <p class="text-xs text-slate-400">Aprende tu tono de escritura, formato preferido y proyectos activos integrándolos automáticamente con tu perfil de Google.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Microsoft Graph Memory</span>
+                <p class="text-xs text-slate-400">Entiende tu rol profesional, reuniones habituales, estilo corporativo e interacciones recientes en Microsoft 365.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Memory & Custom Instructions</span>
+                <p class="text-xs text-slate-400">Memoria activa entre conversaciones para recordar datos clave que decidas compartirle, además de instrucciones fijas de personalidad.</p>
+              </td>
+            </tr>
+
+            <!-- Imaginar / Creación Creativa -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="imaginar">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-amber-500/10 text-amber-400">✨</span>
+                  Imaginar y Creación Creativa
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Imagen 3 & Storytelling</span>
+                <p class="text-xs text-slate-400">Lluvia de ideas visual y conceptual. Crea historias interactivas, guiones y conceptos artísticos combinando texto e imagen al instante.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Imagine / Designer</span>
+                <p class="text-xs text-slate-400">Comando "Imagine" para prototipado visual en tiempo real, creación de bocetos, logos e ilustraciones publicitarias.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Canvas & DALL-E Ideation</span>
+                <p class="text-xs text-slate-400">Ideación interactiva en Canvas para escritura narrativa, creación de mundos ficticios y generación gráfica detallada.</p>
+              </td>
+            </tr>
+
+            <!-- Cuadernos e Investigación -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="cuadernos">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-blue-500/10 text-blue-400">📓</span>
+                  Cuadernos y Notas (Notebooks)
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">NotebookLM & Colab</span>
+                <p class="text-xs text-slate-400">NotebookLM crea cuadernos de estudio fundamentados en tus archivos sin alucinaciones (con resúmenes de audio). Google Colab ofrece cuadernos de Python asistidos por Gemini.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">OneNote Copilot & Loop</span>
+                <p class="text-xs text-slate-400">Integración directa en bloques de OneNote para resumir y generar apuntes, junto a Microsoft Loop para cuadernos interactivos de proyecto.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Projects & Canvas / Jupyter</span>
+                <p class="text-xs text-slate-400">Espacios de proyectos integrando fuentes y notas persistentes, además del análisis interactivo de código estilo cuaderno.</p>
+              </td>
+            </tr>
+
+            <!-- Estudiantes / Investigación -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="estudiantes">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-purple-500/10 text-purple-400">🎓</span>
+                  Estudiantes e Investigación
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">NotebookLM</span>
+                <p class="text-xs text-slate-400">Analiza PDFs y notas sin inventar datos. Genera guías de estudio, resúmenes con citas directas y podcasts explicativos.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Pages & Bing</span>
+                <p class="text-xs text-slate-400">Agrega fuentes de la web en tiempo real, cita artículos académicos y estructura fichas de estudio interactivas.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Deep Research & Chat</span>
+                <p class="text-xs text-slate-400">Investigación en profundidad navegando decenas de fuentes. Ideal para explicar temas complejos paso a paso.</p>
+              </td>
+            </tr>
+
+            <!-- Imágenes -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="imagenes">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-pink-500/10 text-pink-400">🎨</span>
+                  Generación de Imágenes
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Imagen 3</span>
+                <p class="text-xs text-slate-400">Crea arte fotorrealista e ilustraciones limpias. Excelente integración directa sin salir del chat.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Microsoft Designer</span>
+                <p class="text-xs text-slate-400">Basado en DALL-E 3. Permite editar imágenes creadas, cambiar fondos, estilos y exportar a tarjetas o posts.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">DALL-E 3 Integrado</span>
+                <p class="text-xs text-slate-400">Manejo preciso de detalles y texto dentro de las imágenes. Permite edición por selección de regiones.</p>
+              </td>
+            </tr>
+
+            <!-- Biblioteca / Personalización -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="biblioteca">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-amber-500/10 text-amber-400">📚</span>
+                  Biblioteca & Asistentes
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Gems</span>
+                <p class="text-xs text-slate-400">Crea bots personalizados con instrucciones fijas (ej: "Profesor de Inglés", "Revisor de código").</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Studio / Agentes</span>
+                <p class="text-xs text-slate-400">Agentes corporativos capaces de consultar bases de datos internas de la empresa y automatizar flujos.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">GPTs Store</span>
+                <p class="text-xs text-slate-400">Tienda pública y privada de GPTs especializados construidos por la comunidad u organizaciones.</p>
+              </td>
+            </tr>
+
+            <!-- Proyectos y Organización -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="proyectos">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-sky-500/10 text-sky-400">📁</span>
+                  Proyectos y Organización
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Gems & Workspace Context</span>
+                <p class="text-xs text-slate-400">Agrupa instrucciones y archivos específicos dentro de Gems o carpetas sincronizadas en Google Drive.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Pages & Workspace</span>
+                <p class="text-xs text-slate-400">Espacios colaborativos de trabajo para estructurar proyectos corporativos, repositorios de código y documentos de equipo.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Projects</span>
+                <p class="text-xs text-slate-400">Carpetas dedicadas que reúnen instrucciones de proyecto, archivos de contexto y chats específicos compartibles en equipo.</p>
+              </td>
+            </tr>
+
+            <!-- Experimentos y Funciones Beta -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="experimentos">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-rose-500/10 text-rose-400">🧪</span>
+                  Experimentos y Labs (Beta)
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Gemini Labs / Experimental</span>
+                <p class="text-xs text-slate-400">Prueba de modelos experimentales (Gemini 2.0 Flash/Pro), integración multimodal avanzada e investigación autónoma.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Labs / Copilot Vision</span>
+                <p class="text-xs text-slate-400">Funciones en desarrollo como análisis en pantalla en tiempo real (Vision), Copilot Daily y acciones autónomas del sistema.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">ChatGPT Beta Features</span>
+                <p class="text-xs text-slate-400">Acceso anticipado a prototipos de Canvas, vista previa de Search, llamadas por voz avanzadas y conectores integrados.</p>
+              </td>
+            </tr>
+
+            <!-- Razonamiento Lógico Profundo -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="razonamiento">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-yellow-500/10 text-yellow-400">🧠</span>
+                  Razonamiento Profundo (Thinking)
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Gemini Thinking Mode</span>
+                <p class="text-xs text-slate-400">Muestra la cadena de pensamiento explícita antes de responder problemas científicos, matemáticos o lógicos.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Think Deeper (o1/o3 integration)</span>
+                <p class="text-xs text-slate-400">Modo de pensamiento lento impulsado por modelos analíticos para arquitectura de código y análisis complejo.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">OpenAI o1 / o3-mini</span>
+                <p class="text-xs text-slate-400">Modelos especializados en "pensar" detalladamente cada paso para resolver programación avanzada y ciencias exactas.</p>
+              </td>
+            </tr>
+
+            <!-- Voz -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="voz">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-red-500/10 text-red-400">🎙️</span>
+                  Voz e Interacción
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Gemini Live</span>
+                <p class="text-xs text-slate-400">Conversación fluida natural. Permite interrumpir y cambiar de tema sobre la marcha en dispositivos móviles.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Voice</span>
+                <p class="text-xs text-slate-400">Dictado continuo y respuesta por voz orientada a lectura de documentos, comandos y asistencia operativa.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Advanced Voice Mode</span>
+                <p class="text-xs text-slate-400">Modo de voz de ultrabaja latencia con tono emocional, risas, susurros e imitación de acentos en tiempo real.</p>
+              </td>
+            </tr>
+
+            <!-- Editor / Canvas -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="editor">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-indigo-500/10 text-indigo-400">📝</span>
+                  Espacio de Edición
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Google Docs Integrado</span>
+                <p class="text-xs text-slate-400">Exportación directa a Google Docs con 1 clic para edición tradicional en la nube.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Copilot Pages / Word</span>
+                <p class="text-xs text-slate-400">Lienzo colaborativo dinámico donde puedes editar el texto generado junto al modelo e insertar contenido en Word.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Canvas</span>
+                <p class="text-xs text-slate-400">Panel lateral interactivo para editar código o texto directamente, hacer ajustes de longitud y formato en tiempo real.</p>
+              </td>
+            </tr>
+
+            <!-- Código -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="codigo">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-teal-500/10 text-teal-400">💻</span>
+                  Código y Datos
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Colab Sandbox</span>
+                <p class="text-xs text-slate-400">Genera y ejecuta código Python conectando directamente con entornos de Google Colab.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">Python en Excel</span>
+                <p class="text-xs text-slate-400">Ejecuta análisis de datos complejo, gráficos y modelos estadísticos de Python directamente dentro de hojas de cálculo.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Code Interpreter</span>
+                <p class="text-xs text-slate-400">Entorno virtual aislado de Python para ejecutar scripts, procesar CSVs, crear gráficos y transformar archivos.</p>
+              </td>
+            </tr>
+
+            <!-- Archivos -->
+            <tr class="hover:bg-slate-800/40 transition-colors" data-category="archivos">
+              <td class="p-4 pl-6 font-semibold text-slate-200">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 rounded-md bg-orange-500/10 text-orange-400">📁</span>
+                  Conexión de Archivos
+                </div>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20 mb-1">Google Drive Ext.</span>
+                <p class="text-xs text-slate-400">Busca y resume archivos dentro de tu Google Drive, correos de Gmail y documentos sin subirlos manualmente.</p>
+              </td>
+              <td class="p-4 text-slate-300">
+                <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 mb-1">OneDrive & SharePoint</span>
+                <p class="text-xs text-slate-400">Indexa la base de datos completa de tu empresa en Microsoft 365 para responder preguntas sobre archivos corporativos.</p>
+              </td>
+              <td class="p-4 pr-6 text-slate-300">
+                <span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 mb-1">Carga Multiformato</span>
+                <p class="text-xs text-slate-400">Subida manual o conectores de nube (Drive, OneDrive) para analizar documentos, código e imágenes individualmente.</p>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Sección Guía Rápida de Selección -->
+    <div class="glass-card rounded-2xl p-6 border border-slate-800">
+      <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+        <span>🎯</span> ¿Cuál deberías elegir según tu caso de uso?
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-blue-500/20">
+          <h4 class="font-bold text-blue-400 mb-2">Elije Google Gemini si:</h4>
+          <ul class="space-y-1.5 text-xs text-slate-300 list-disc list-inside">
+            <li>Tu flujo de trabajo principal es Google Docs, Drive y Gmail.</li>
+            <li>Eres estudiante y usas <strong>NotebookLM</strong> para estudiar PDFs sin alucinaciones.</li>
+            <li>Usas dispositivos Android para asistencia en tiempo real.</li>
+          </ul>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-cyan-500/20">
+          <h4 class="font-bold text-cyan-400 mb-2">Elije Microsoft Copilot si:</h4>
+          <ul class="space-y-1.5 text-xs text-slate-300 list-disc list-inside">
+            <li>Trabajas a diario en Windows, Word, Excel, PowerPoint y Teams.</li>
+            <li>Necesitas analizar grandes volúmenes de datos en hojas de cálculo.</li>
+            <li>Tu empresa utiliza el ecosistema de seguridad de Microsoft 365.</li>
+          </ul>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-emerald-500/20">
+          <h4 class="font-bold text-emerald-400 mb-2">Elije ChatGPT si:</h4>
+          <ul class="space-y-1.5 text-xs text-slate-300 list-disc list-inside">
+            <li>Buscas la máxima capacidad de razonamiento y programación pura.</li>
+            <li>Quieres usar funciones avanzadas como voz fluida en tiempo real y <strong>Canvas</strong>.</li>
+            <li>Prefieres una herramienta agnóstica sin atarte a un ecosistema fijo.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    function filterCategory() {
+      const selectedCategory = document.getElementById('categoryFilter').value;
+      const rows = document.querySelectorAll('#tableBody tr');
+
+      rows.forEach(row => {
+        const category = row.getAttribute('data-category');
+        if (selectedCategory === 'all' || category === selectedCategory) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
